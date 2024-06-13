@@ -1,0 +1,222 @@
+
+.card-content {
+    padding: 30px;
+      text-align: center; /* Alinea al centro el contenido de .card-content */
+  }
+  
+  .card-title {
+  
+      font-size: 30px;
+      font-weight: bold;
+      color:#003b6f;
+  }
+  
+  /* Estilización de los campos de formulario */
+  .input-field {
+  
+      margin: 20px 450px 30px 450px; /* Aumenta el margen inferior a 30px para más espacio */
+      position: relative;
+  }
+  
+  .input-field input {
+  
+      padding: 10px 10px;
+      border-top: transparent !important;
+      border-right: transparent !important;
+      border-left: transparent !important;
+      border-bottom: 1px solid #ccc !important;
+      box-shadow: none;
+      outline: none;
+      background: transparent;
+      font-size: 18px; /* Tamaño de fuente para los inputs */
+      color: #111;
+  }
+  
+  .input-field label {
+      position: absolute;
+      left: 10px;
+      top: 0;
+      color: #111;
+      transition: all 0.3s;
+      pointer-events: none;
+      font-size: 18px;
+  }
+  
+  .input-field input:focus + label,
+  .input-field input:not(:placeholder-shown) + label {
+      top: -20px; /* Mueve el label más arriba para dejar claro espacio */
+      font-size: 18px; /* Aumenta el tamaño del texto cuando está activo/flotante */
+      color: #666;
+  }
+  
+  
+  .input-field input:placeholder-shown + label {
+      visibility: hidden; /* Oculta el label cuando el placeholder está visible */
+  }
+  
+  
+  .browser-default {
+      display: block; /* Asegura que el select se muestre como bloque */
+      margin: 20px 100px 30px 0px; /* Margen igual que los inputs */
+      padding: 10px 10px; /* Padding igual que inputs */
+      border: none; /* No border por defecto */
+      border-bottom: 1px solid #ccc !important; /* Solo una línea en la base del select */
+      background: transparent; /* Fondo transparente */
+      font-size: 18px; /* Tamaño de fuente igual que los inputs */
+      color: #666; /* Color de texto igual que los inputs */
+      cursor: pointer; /* Cursor tipo puntero para indicar que es un elemento interactivo */
+      outline: none; /* Elimina el borde de foco predeterminado */
+  }
+  
+  /* Estilos para cuando el select está enfocado */
+  .browser-default:focus {
+      border-bottom: 2px solid #666; /* Borde inferior más destacado cuando está enfocado */
+  }
+  
+  
+  .btn.custom-button, .btn.reset-button {
+      flex: 1; /* Asegura que cada botón tome la mitad del espacio disponible */
+      padding: 10px 20px; /* Espaciado interno */
+      color: white; /* Texto blanco para ambos botones */
+      border: none; /* Sin bordes */
+      cursor: pointer; /* Cursor como indicador de clic */
+      transition: background-color 0.3s; /* Transición suave para cambio de color */
+      margin: 0px 350px;
+    }
+  
+  .btn.custom-button {
+      background-color: #003b6f; /* Color de fondo inicial azul oscuro */
+      margin-right: 5px; /* Margen a la derecha para separación */
+  }
+  
+  .btn.custom-button:hover {
+      background-color: #00cdff; /* Color de fondo al pasar el mouse azul claro */
+  }
+  
+  .btn.reset-button {
+      background-color: #00cdff; /* Color de fondo inicial azul claro */
+      margin-left: 5px; /* Margen a la izquierda para mantener la simetría */
+  }
+  
+  .btn.reset-button:hover {
+      background-color: #003b6f; /* Color de fondo al pasar el mouse azul oscuro */
+  }
+  
+  .nav-wrapper1 {
+  
+      background-color: #00cdff; /* Fondo azul para la barra de navegación */
+      padding: 10px; /* Padding para la nav */
+  }
+  
+  .input-field1 {
+    
+      position: relative; /* Posicionamiento relativo para el posicionamiento del ícono */
+  }
+  
+  .input-field1 .prefix {
+      position: absolute; /* Posicionamiento absoluto para el ícono */
+      left: 10px; /* Espaciado desde el borde izquierdo */
+      top: 50%; /* Centrado vertical */
+      transform: translateY(-50%); /* Ajuste fino para centrar el ícono exactamente */
+      color: white; /* Color del ícono */
+      
+  }
+  
+  #buscar {
+      width: 100%; /* Anchura completa para aprovechar el espacio disponible */
+      padding-left: 50px; /* Espacio para el ícono */
+      border: none; /* Sin bordes */
+      height: 40px; /* Altura fija para el input */
+      line-height: 40px; /* Altura de línea para centrar el texto verticalmente */
+      font-size: 18px; /* Tamaño de fuente adecuado */
+      box-shadow: none; /* Sin sombra */
+      border-radius: 5px; /* Bordes redondeados suavemente */
+      outline: none; /* Sin contorno al enfocar */
+  }
+  
+  #buscar::placeholder {
+      color: white; /* Color del texto placeholder */
+      opacity: 1; /* Hacer que el placeholder sea completamente visible */
+  }
+  
+  /* Estilo general para las tarjetas */
+  .card2 {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil */
+    padding: 20px; /* Espacio interior */
+    margin: 20px 0; /* Margen exterior */
+  }
+  
+  /* Título de la tarjeta */
+  .card-title2 {
+    color: #333; /* Color oscuro para el texto */
+    font-size: 24px; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio debajo del título */
+  }
+
+  
+
+  
+  /* Estilos para el select y las opciones */
+  select.browser-default1 {
+    width: 100%; /* Ancho completo para que se ajuste al contenedor */
+    padding: 8px 12px; /* Espacio alrededor del texto dentro del select */
+    border: none; /* Eliminar bordes */
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #f8f9fa; /* Color de fondo claro para el select */
+    color: #495057; /* Color de texto oscuro para mejorar el contraste */
+    text-align: center; /* Centrado del texto dentro del select */
+    appearance: none; /* Remover estilo predeterminado de navegadores */
+  }
+  
+  select.browser-default1 option {
+    background-color: #fff; /* Fondo blanco para las opciones */
+    color: #333; /* Texto más oscuro para opciones */
+  }
+  
+  select.browser-default1 option[selected] {
+    background-color: #2b3137; /* Fondo oscuro para la opción seleccionada */
+    color: #ffffff; /* Texto blanco para la opción seleccionada */
+  }
+  
+  select.browser-default1 option:not([selected]):hover {
+    background-color: #e9ecef; /* Color de fondo al pasar el mouse sobre opciones no seleccionadas */
+    color: #212529; /* Color de texto oscuro para opciones al pasar el mouse */
+  }
+  /* Asegúrate de que el contenedor .col.s6 utilice todo el espacio disponible correctamente */
+
+/* Estilo para el contenedor que aloja los selects de Sexo y Condición */
+.col.s6 {
+    display: flex;
+    justify-content: space-between; /* Esto mantendrá los selects pegados a cada extremo */
+    align-items: left;
+    margin: 0px 450px -25px; /* Ajusta esto para mantener un margen uniforme */
+    padding: 0; /* Elimina cualquier padding que pueda afectar la disposición */
+    width: 51%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilos para cada div que contiene los selects para usar el 50% del espacio disponible */
+.col.s6 > div {
+    flex: 1; /* Distribuye el espacio disponible equitativamente */
+    padding-right: 10px; /* Añade padding derecho en el primer div para un pequeño espacio entre los selects */
+}
+
+.col.s6 > div:last-child {
+    padding-right: 0; /* Elimina cualquier padding derecho en el último div */
+}
+
+/* Estilos para los selects para asegurar que llenen todo el espacio horizontal */
+.browser-default {
+    width: 100%; /* Asegura que cada select ocupe todo el espacio horizontal disponible en su contenedor */
+}
+.col.s6 label {
+    margin-left: 10px;
+    width: 100%; /* Asegura que el label ocupe todo el ancho del contenedor */
+    text-align: left; /* Alinea el texto a la izquierda */ /* Espacio entre la etiqueta y el select */
+    display: block; /* Hace que la etiqueta sea un bloque para posicionarla mejor */
+    color: #666; /* Color oscuro para las etiquetas */
+    font-size: 20px; /* Tamaño de fuente para las etiquetas */
+    font-weight: bold;
+}
