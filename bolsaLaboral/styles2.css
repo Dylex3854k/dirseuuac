@@ -1,0 +1,18 @@
+/* Estilo para el botón dentro de .image-slot para que ocupe el 100% del ancho */
+.full-width-button {
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: #003b6f; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+
+
+    cursor: pointer; /* Cursor de mano */
+    text-align: center; /* Alineación del texto */
+   font-size: 16px; /* Tamaño de la fuente */
+}
+
+.full-width-button:hover {
+    background-color: #00cdff; /* Color de fondo del botón al pasar el ratón */
+}

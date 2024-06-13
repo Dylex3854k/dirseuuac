@@ -1,0 +1,55 @@
+
+/* Estilos específicos para las tarjetas */
+.card {
+    background-image: url(''); /* Cambiar por la ruta correcta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Posición relativa para posibles elementos absolutos dentro */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    background: rgb(255, 255, 255); /* Overlay oscuro para mejorar la legibilidad del texto */
+    z-index: 0;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido de la tarjeta esté por encima del overlay */
+    color: #003b6f; /* Texto en blanco para contrastar con el fondo oscuro */
+    text-align: center; /* Centra el contenido de card-content */
+}
+
+/* Estilos para la imagen de usuario */
+.user-circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+.user-circle img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para los títulos dentro de las tarjetas */
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Estilos para enlaces, especialmente enlaces dentro de las tarjetas */
+a.blue-text {
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    color: #00cdff; /* Establece el color del texto a azul */
+}
+
+

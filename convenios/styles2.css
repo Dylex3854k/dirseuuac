@@ -1,0 +1,24 @@
+/* Agrega este estilo para centrar el título */
+.convenio-item h2 {
+    text-align: center;
+}
+
+/* Otros estilos según sea necesario */
+.convenios-list {
+    margin: 0 auto;
+    max-width: 1500px; /* Ancho máximo de la lista de convenios */
+    padding: 20px;
+}
+
+
+.convenio-item + .convenio-item {
+    border-top: none; /* Elimina la línea superior del segundo y siguientes items */
+}
+
+.convenio-item:not(:last-child) {
+    border-bottom: 1px solid #ccc; /* Añade una línea inferior entre elementos */
+}
+
+.convenio-item .info {
+    margin-top: 10px;
+}
